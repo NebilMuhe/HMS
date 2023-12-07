@@ -10,10 +10,10 @@ function App() {
     <>
       <NavBar />
       <Home />
-      {/* <About />
+      <About />
       <Services />
       <Departments />
-      <Doctors /> */}
+      <Doctors />
     </>
   );
 }
