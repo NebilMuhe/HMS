@@ -1,5 +1,5 @@
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface ImageProps {
   imageUrls: string[];
@@ -21,6 +21,14 @@ const ImageSlider = ({ imageUrls }: ImageProps) => {
       return index + 1;
     });
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="w-full h-full relative">
