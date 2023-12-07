@@ -31,7 +31,7 @@ const ImageSlider = ({ imageUrls }: ImageProps) => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative lg:w-full lg:h-full">
       <div className=" md:w-full md:h-full flex overflow-hidden">
         {imageUrls.map((url) => (
           <img
