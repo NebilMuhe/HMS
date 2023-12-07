@@ -22,7 +22,7 @@ const Services = () => {
         Services
       </h1>
       <div className="flex justify-center">
-        <div className="grid grid-cols-3 gap-y-5 gap-x-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 gap-x-8">
           {services.map((service) => (
             <div className="w-80 p-6 bg-slate-100 hover:bg-slate-900 hover:text-white rounded-lg transition hover:animate-fade">
               <FlaskConical className="w-10 h-10" />
